@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Latihan PemWeb 2</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="title-box">
+      <img class="title-img" src="./assets/gambar-elsa.png" alt="Gambar orang kabarnya" />
+      <div class="description-box">
+        <h1 class="description-header">Hy saya <span style="color: rgb(30, 58, 138, .5)">Elsa Asle</span></h1>
+        <p class="description-text">Seorang vikings menakutkan</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#tentang">Tentang saya</a></li>
+        <li><a class="nav-link" href="#pengalaman">Pengalaman kerja</a></li>
+        <li><a class="nav-link" href="#hubungi">hubungi saya</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section>
+      <h2 class="section-title" id="tentang">#tentang saya</h2>
+      <div class="container d-flex">
+        <div class="tentang-box">
+          <div>
+            <img src="assets/letter-l.png" alt="gambar l" class="tentang-img">
+          </div>
+          <p class="tentang-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus sequi ut, totam corporis enim
+            reprehenderit sit eaque ea, dolor amet sapiente perferendis ipsum laboriosam quod repellendus nam, omnis
+            sunt. Quae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, iure? Neque corrupti
+            alias, ipsum eos ad eligendi natus odio. Doloribus est consectetur reiciendis ipsum dolorum molestiae,
+            cupiditate quas ducimus quaerat.
+          </p>
+        </div>
+        <div class="tentang-video">
+          <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="section-title" id="pengalaman">#Pengalaman Kerja</h2>
+      <div class="container">
+        <table class="table">
+          <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">Posisi</th>
+            <th rowspan="2">Perusahaan</th>
+            <th colspan="2">Waktu</th>
+          </tr>
+          <tr>
+            <th>Mulai</th>
+            <th>Selesai</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>lorem</td>
+            <td>ipsum</td>
+            <td>21123</td>
+            <td>2331</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>lorem</td>
+            <td>ipsum</td>
+            <td>21123</td>
+            <td>2331</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>lorem</td>
+            <td>ipsum</td>
+            <td>21123</td>
+            <td>2331</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section>
+      <h2 class="section-title" id="hubungi">#Hubungi saya</h2>
+      <div class="container">
+        <form action="#" class="form">
+          <div class="d-flex-col">
+            <label for="nama">Nama :</label>
+            <input type="text" name="nama" id="nama" class="input-text" />
+          </div>
+          <p>Sudah nonton film saya</p>
+          <div class="form-flex">
+            <label for="opsi1">Sudah</label>
+            <input type="radio" name="opsi" value="sudah" id="opsi1" checked />
+            <label for="opsi2" class="ml-s">belum</label>
+            <input type="radio" name="opsi" value="belum" id="opsi2" />
+          </div>
+          <p>Apa Coba ?</p>
+          <div class="form-flex">
+            <input type="checkbox" id="cbox1" name="cbox1" value="ini" />
+            <label for="cbox1" class="mr-s"> ini</label>
+            <input type="checkbox" id="cbox2" name="cbox2" value="itu" />
+            <label for="cbox2" class="mr-s"> itu</label>
+            <input type="checkbox" id="cbox3" name="cbox3" value="anu" />
+            <label for="cbox3" class="mr-s"> anu</label>
+          </div>
+          <button>kirim</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>ini footer</p>
+  </footer>
+</body>
+
+</html>
