@@ -5,9 +5,10 @@ const dropdown = document.querySelector("#drop-down");
 
 const generateMarkup = (data) => {
   const markup = data
-    .map((item) => {
+    .map((item, i) => {
       return `
          <tr>
+            <td>${i + 1}</td>
             <td>${item.nama}</td>
             <td>${item.nim}</td>
             <td>${item.prodi}</td>
@@ -27,6 +28,7 @@ const renderData = (data) => {
 const clearTable = () => {
   table.innerHTML = `
   <thead>
+         <th>No</th>
          <th>Nama</th>
          <th>NIM</th>
          <th>Prodi</th>
@@ -34,7 +36,7 @@ const clearTable = () => {
   `;
 };
 
-dropdown.addEventListener("change", (e) => {
+const dropdownChangeHandler = (e) => {
   const value = e.target.value;
   console.log(value);
   const filteredData = data.filter(
@@ -42,4 +44,6 @@ dropdown.addEventListener("change", (e) => {
   );
   clearTable();
   renderData(filteredData);
-});
+};
+
+dropdown.addEventListener("change", dropdownChangeHandler);

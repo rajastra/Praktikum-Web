@@ -44,4 +44,9 @@ export const data = [
     nim: "1234567142911",
     prodi: "Teknik sipil",
   },
+  {
+    nama: "riduan",
+    nim: "199941288",
+    prodi: "Teknik sipil",
+  },
 ];
