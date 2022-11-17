@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tugas 5 Praktikum Web</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      html,
+      body {
+         height: 100%;
+      }
+
+      body {
+         background-color: #f5f5f5;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         padding: 1rem;
+      }
+
+      table {
+         max-width: 60rem;
+         margin-top: 1rem;
+         border-collapse: collapse;
+      }
+
+      thead {
+         background-color: #f5f5f5;
+      }
+
+      th,
+      td {
+         padding: 10px;
+         text-align: left;
+         border: 1px solid black;
+      }
+   </style>
+</head>
+
+<body>
+   <label for="drop-down">Prodi:</label>
+   <select name="drop-down" id="drop-down">
+      <!-- default nul -->
+      <option value="null">Pilih Prodi</option>
+      <option value="teknik informatika">Teknik Informatika</option>
+      <option value="teknik sipil">Teknik Sipil</option>
+      <option value="teknik industri">Teknik Industri</option>
+   </select>
+   <table>
+      <thead>
+         <th>Nama</th>
+         <th>NIM</th>
+         <th>Prodi</th>
+      </thead>
+   </table>
+
+   <script src="sccript.js" type="module"></script>
+</body>
+
+</html>
